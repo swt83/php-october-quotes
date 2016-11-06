@@ -7,7 +7,7 @@ An OctoberCMS default plugin for adding testimonial quotes to your website, incl
 Add as a submodule to your project:
 
 ```bash
-$ git submodule add git@github.com:swt83/php-october-quotes.git plugs/travis/quotes
+$ git submodule add git@github.com:swt83/php-october-quotes.git plugins/travis/quotes
 ```
 
 ## Usage
