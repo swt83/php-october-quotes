@@ -20,10 +20,30 @@ use Travis\Quotes\Models\Quote;
 
 function onStart()
 {
-	// cache forever
+    // cache forever
     $this['quotes'] = Cache::rememberForever('quotes', function()
     {
-    	return Quote::orderBy('sort_order', 'asc')->get()->toArray(); // must have toArray() or cache will fail
+        // load
+        $records = Quote::orderBy('sort_order', 'asc')->get();
+
+        // init
+        $clean = [];
+
+        // foreach record...
+        foreach ($records as $record)
+        {
+            // convert to array
+            $array = $record->toArray();
+
+            // capture avatar path
+            $array['avatar'] = is_object($record->avatar) ? $record->avatar->path : null;
+
+            // save
+            $clean[] = $array;
+        }
+
+        // return
+        return $clean;
     });
 }
 ?>
