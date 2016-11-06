@@ -1,0 +1,25 @@
+plugin:
+    name: 'travis.quotes::lang.plugin.name'
+    description: 'travis.quotes::lang.plugin.description'
+    author: 'Scott Travis'
+    icon: icon-quote-right
+    homepage: ''
+permissions:
+    travis.quotes.manage_quotes:
+        tab: 'travis.quotes::lang.plugin.name'
+        label: 'Manage Quotes'
+navigation:
+    quotes:
+        label: 'travis.quotes::lang.plugin.name'
+        url: travis/quotes/collection
+        icon: icon-quote-right
+        iconSvg: 'plugins/travis/quotes/assets/img/icon.png'
+        permissions:
+            - travis.quotes.manage_quotes
+        sideMenu:
+            collection:
+                label: Collection
+                url: travis/quotes/collection
+                icon: icon-list
+                permissions:
+                    - travis.quotes.manage_quotes

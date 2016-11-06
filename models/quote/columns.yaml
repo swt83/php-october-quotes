@@ -1,0 +1,25 @@
+columns:
+    sort_order:
+        label: Order
+        type: number
+        sortable: true
+    quote:
+        label: Quote
+        type: text
+        searchable: true
+        sortable: true
+    author_name:
+        label: Author
+        type: text
+        searchable: true
+        sortable: true
+    author_title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+    author_organization:
+        label: Organization
+        type: text
+        searchable: true
+        sortable: true

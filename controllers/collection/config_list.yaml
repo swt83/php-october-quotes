@@ -1,0 +1,11 @@
+list: $/travis/quotes/models/quote/columns.yaml
+modelClass: Travis\Quotes\Models\Quote
+title: Collection
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'travis/quotes/collection/update/:id'

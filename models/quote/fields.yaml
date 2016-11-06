@@ -1,0 +1,44 @@
+fields:
+    quote:
+        label: Quote
+        size: ''
+        oc.commentPosition: ''
+        span: full
+        placeholder: ''
+        required: 1
+        type: textarea
+    author_name:
+        label: 'Author Name'
+        oc.commentPosition: ''
+        span: full
+        type: text
+    author_title:
+        label: 'Author Title'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    author_organization:
+        label: 'Author Organization'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    date:
+        label: Date
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    source:
+        label: Source
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    avatar:
+        label: Avatar
+        oc.commentPosition: ''
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

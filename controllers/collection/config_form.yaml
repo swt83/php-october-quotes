@@ -1,0 +1,10 @@
+name: Collection
+form: $/travis/quotes/models/quote/fields.yaml
+modelClass: Travis\Quotes\Models\Quote
+defaultRedirect: travis/quotes/collection
+create:
+    redirect: 'travis/quotes/collection/update/:id'
+    redirectClose: travis/quotes/collection
+update:
+    redirect: travis/quotes/collection
+    redirectClose: travis/quotes/collection

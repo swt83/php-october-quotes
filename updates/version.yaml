@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table travis_quotes_collection'
+    - builder_table_create_travis_quotes_collection.php
+1.0.3:
+    - 'Updated table travis_quotes_collection'
+    - builder_table_update_travis_quotes_collection.php
+1.0.4:
+    - 'Updated table travis_quotes_collection'
+    - builder_table_update_travis_quotes_collection_2.php
