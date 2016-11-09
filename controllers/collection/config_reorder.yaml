@@ -1,5 +1,5 @@
 title: Collection
 modelClass: Travis\Quotes\Models\Quote
-nameFrom: author
+nameFrom: author_name
 toolbar:
     buttons: reorder_toolbar
